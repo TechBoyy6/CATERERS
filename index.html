@@ -24,7 +24,8 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -510,7 +511,8 @@
           <p>Book a Table</p>
         </div>
 
-        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+        <!-- <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100"> -->
+        <!-- <form onsubmit="sendEmail(); reset(); return false;"> -->
           <div class="row">
             <div class="col-lg-4 col-md-6 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
@@ -550,6 +552,22 @@
         </form>
 
       </div>
+      <script src =" https://smtpjs.com/v3/smtp.js"></script>
+      <script>
+        function sendEmail(){
+          Email.send({
+            Host : "smtp.gmail.com",
+            Username : "satyamshah2201@gmail.com",
+            Password : "n@04121831",
+            To : 'shahnayan0412@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "New Contact of inquery",
+            Body : "And this is the body"
+        }).then(
+          message => alert(message)
+        );
+        }
+      </script>
     </section><!-- End Book A Table Section -->
 
     <!-- ======= Testimonials Section ======= -->
@@ -799,7 +817,42 @@
         </div>
       </div>
 
-      <div data-aos="fade-up">
+      <div class="row">
+
+        <div class="col-lg-4">
+          <div class="info d-flex flex-column justify-content-center" data-aos="fade-right">
+            <div class="address">
+              <i class="icofont-google-map"></i>
+              <h4>Location:</h4>
+              <p>Room no. 2 and 3, Ground floor, Sai Krupa Building, Dutt Mandir Road, Dombivli (EAST) - 421201, Maharashtra, India</p>
+            </div>
+
+            <div class="email">
+              <i class="icofont-envelope"></i>
+              <h4>Email:</h4>
+              <p>alphastudios001@gmail.com</p>
+            </div>
+
+            <div class="phone">
+              <i class="icofont-phone"></i>
+              <h4>Call:</h4>
+              <p>+91-9004060889</p>
+              <p>+91-7045203470</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-8 mt-5 mt-lg-0">
+          <!-- <div class="col-lg-5 d-flex align-items-stretch"> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.5951664976683!2d73.0863684149033!3d19.212876487009467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDEyJzQ2LjQiTiA3M8KwMDUnMTguOCJF!5e0!3m2!1sen!2sin!4v1624259257371!5m2!1sen!2sin" title="Alpha studio Location" style="width: 750px; height: 450px; border: 0;"  allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+      </div>
+
+
+      <!-- <div data-aos="fade-up">
         <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
       </div>
 
@@ -865,7 +918,7 @@
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
 
-          </div>
+          </div> -->
 
         </div>
 

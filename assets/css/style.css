@@ -1464,8 +1464,16 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
+
 .contact .info {
-  width: 100%;
+  width: 80%;
+  height: 100%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-left: 100px;  
+  position: relative;
 }
 
 .contact .info i {
@@ -1473,7 +1481,8 @@ section {
   float: left;
   width: 44px;
   height: 44px;
-  background: #cda45e;
+  background: #FEF9E7;
+  color: #cda45e;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1483,9 +1492,10 @@ section {
 
 .contact .info h4 {
   padding: 0 0 0 60px;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
   margin-bottom: 5px;
+  color: #151515;
   font-family: "Poppins", sans-serif;
 }
 
@@ -1493,7 +1503,7 @@ section {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #bab3a6;
+  color: #484848;
 }
 
 .contact .info .open-hours,
