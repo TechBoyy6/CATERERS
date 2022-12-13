@@ -8,7 +8,9 @@
   <title>Catering Service</title>
   <meta content="catering" name="description">
   <meta content="food" name="keywords">
-
+  <!-- smtp script -->  
+  <!-- <script src="https://smtpjs.com/v3/smtp.js">
+  </script> -->
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -558,13 +560,14 @@
       </div>
     </section> -->
     <!-- End Events Section -->
+
     <!--book a date  Section -->
 
     <section id="book-a-table" class="book-a-table">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Reservation</h2>
+          <h2>Booking</h2>
           <p>Book a date</p>
         </div>
 
@@ -576,27 +579,27 @@
             <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
               <div class="row gy-4">
                 <div class="col-lg-4 col-md-6">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Client Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                   <div class="validate"></div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email">
                   <div class="validate"></div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Contact Number" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                   <div class="validate"></div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                  <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <input type="text" name="date" class="form-control" id="date" placeholder="Date Of Event" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                   <div class="validate"></div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                  <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <input type="text" class="form-control" name="venue" id="venue" placeholder="Venue" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                   <div class="validate"></div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                  <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                  <input type="number" class="form-control" name="people" id="people" placeholder="No of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
                   <div class="validate"></div>
                 </div>
               </div>
@@ -609,7 +612,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Book a Table</button></div>
+              <div class="text-center"><button type="submit">Book a Date</button></div>
             </form>
           </div><!-- End Reservation Form -->
 
@@ -617,6 +620,28 @@
 
       </div>
     </section>
+    <!-- <script type="text/javascript">
+      let rev_name = document.getElementById('name').value;
+      let rev_email = document.getElementById('email').value;
+      let rev_phone = document.getElementById('phone').value;
+      let rev_date = document.getElementById('date').value;
+      let rev_venue = document.getElementById('venue').value;
+      let rev_people = document.getElementById('people').value;
+      let rev_message = document.getElementById('message').value;
+      let email_body = `The details of the table booking are:\nName: ${rev_name}\nEmail: ${rev_email}\nPhone: ${rev_phone}\nDate: ${rev_date}\nVenue: ${rev_venue}\nPeople Count: ${rev_people}\nMessage: ${rev_message}`
+      Email.send({
+        Host : "smtp.gmail.com",
+        Username : "satyamshah2201@gmail.com",
+        Password : "n@04121831",
+        To : 'techboyy6@gmail.com',
+        From :  document.getElementById('email').value,
+        Subject : "This is the subject",
+        Body : email_body
+    }).then(
+      message => alert(message)
+    );
+    </script> -->
+
 
 
 
