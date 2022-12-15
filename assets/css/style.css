@@ -947,15 +947,15 @@ section {
   border-radius: 50px;
 }
 
-.pdf-download{
+/* .pdf-download{
   /* background-color: #cda45e;
   border: 0;
   padding: 14px 60px;
   color: #fff;
   transition: 0.4s;
-  border-radius: 50px; */
+  border-radius: 50px; 
 
-}
+} */
 
 .menu #menu-flters li {
   cursor: pointer;
