@@ -573,7 +573,7 @@
           <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
 
           <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
-            <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+            <form action="javascript:sendmail();" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
               <div class="row gy-4">
                 <div class="col-lg-4 col-md-6">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
@@ -592,7 +592,7 @@
                   <div class="validate"></div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                  <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <input type="text" name="name" class="form-control" id="venue" placeholder="Venue" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                   <div class="validate"></div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -601,7 +601,7 @@
                 </div>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message"></textarea>
                 <div class="validate"></div>
               </div>
               <div class="mb-3">
@@ -611,6 +611,38 @@
               </div>
               <div class="text-center"><button type="submit">Book a Table</button></div>
             </form>
+            <!-- <script>
+              function sendmail(){
+                var name = $("#name").val();
+                var email = $("#email").val();
+                var phone = $("#phone").val();
+                var date = $("#date").val();
+                var venue = $("#name").val();
+                var people = $("#people").val();
+                var message = $("#message").val();
+
+              }
+
+
+              Email.send({
+                  Host : "smtp.gmail.com",
+                  Username : "voran721@gmail.com",
+                  Password : "n@210899V",
+                  To : 'maitrivora1014@gmail.com',
+                  From : "voran721@gmail.com",
+                  Subject : "This is the subject",
+                  Body : "And this is the body" 
+              }).then(
+                message => {
+                  if(message == OK)
+                  {
+                    alert("Thankyou");
+                  }
+                }
+              );
+            </script> -->
+
+
           </div><!-- End Reservation Form -->
 
         </div>
@@ -1211,6 +1243,8 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
