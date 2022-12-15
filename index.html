@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- satyam -->
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -8,7 +8,6 @@
   <title>Catering Service</title>
   <meta content="catering" name="description">
   <meta content="food" name="keywords">
-
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -55,7 +54,7 @@
   <header id="header" class="fixed-top d-flex align-items-cente">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html"><img src="assets/img/logo1.png" class="menu-img" alt="" width ="160" height="270" ></a></h1>
+      <h1 class="logo me-auto me-lg-0"><a href="index.html"><img src="assets/img/logo1.png" class="menu-img" alt="" width ="160" height="270"></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!--<a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -183,7 +182,7 @@
             <div class="box" data-aos="zoom-in" data-aos-delay="300">
               <span>03</span>
               <h4> Hygiene and Food Safety</h4>
-              <p>We take care of all aspects of food hygiene.</p>
+              <p>We take care of all aspects of food hygiene and safety for the client</p>
             </div>
           </div>
 
@@ -204,8 +203,8 @@
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="menu-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-starters" download="Breakfast Menu" href="assets/img/menu/breakfast.pdf">Breakfast</li>
+              <!-- <li data-filter="*" class="filter-active">All</li> -->
+              <li data-filter=".filter-starters" class="filter-active" download="Breakfast Menu" href="assets/img/menu/breakfast.pdf">Breakfast</li>
               <li data-filter=".filter-salads">Lunch</li>
               <li data-filter=".filter-specialty">High Tea</li>
               <li data-filter=".filter-dinner">Dinner</li>
@@ -459,7 +458,7 @@
     </section><!-- End Specials Section -->
 
     <!-- ======= Events Section ======= -->
-    <section id="events" class="events">
+    <!-- <section id="events" class="events">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -495,9 +494,9 @@
                   </p>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
+            </div>End testimonial item -->
 
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
                   <img src="assets/img/event-private.jpg" class="img-fluid" alt="">
@@ -522,9 +521,9 @@
                   </p>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
+            </div>End testimonial item -->
 
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
                   <img src="assets/img/event-custom.jpg" class="img-fluid" alt="">
@@ -549,22 +548,23 @@
                   </p>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
+            </div>End testimonial item -->
 
-          </div>
+          <!-- </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
-    </section>
+    </section> -->
     <!-- End Events Section -->
+
     <!--book a date  Section -->
 
-    <section id="book-a-table" class="book-a-table">
+    <section id="book-a-date" class="book-a-table">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Reservation</h2>
+          <h2>Booking</h2>
           <p>Book a date</p>
         </div>
 
@@ -573,35 +573,35 @@
           <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
 
           <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
-            <form action="javascript:sendmail();" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+            <form action="forms/book-a-date.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
               <div class="row gy-4">
                 <div class="col-lg-4 col-md-6">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Client Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                   <div class="validate"></div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email">
                   <div class="validate"></div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Contact Number" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                   <div class="validate"></div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                  <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <input type="text" name="date" class="form-control" id="date" placeholder="Date Of Event" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                   <div class="validate"></div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                  <input type="text" name="name" class="form-control" id="venue" placeholder="Venue" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <input type="text" class="form-control" name="venue" id="venue" placeholder="Venue" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                   <div class="validate"></div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                  <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                  <input type="number" class="form-control" name="people" id="people" placeholder="No of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
                   <div class="validate"></div>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message"></textarea>
+                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
                 <div class="validate"></div>
               </div>
               <div class="mb-3">
@@ -609,46 +609,36 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Book a Table</button></div>
+              <div class="text-center"><button type="submit">Book a Date</button></div>
             </form>
-            <!-- <script>
-              function sendmail(){
-                var name = $("#name").val();
-                var email = $("#email").val();
-                var phone = $("#phone").val();
-                var date = $("#date").val();
-                var venue = $("#name").val();
-                var people = $("#people").val();
-                var message = $("#message").val();
-
-              }
-
-
-              Email.send({
-                  Host : "smtp.gmail.com",
-                  Username : "voran721@gmail.com",
-                  Password : "n@210899V",
-                  To : 'maitrivora1014@gmail.com',
-                  From : "voran721@gmail.com",
-                  Subject : "This is the subject",
-                  Body : "And this is the body" 
-              }).then(
-                message => {
-                  if(message == OK)
-                  {
-                    alert("Thankyou");
-                  }
-                }
-              );
-            </script> -->
-
-
           </div><!-- End Reservation Form -->
 
         </div>
 
       </div>
     </section>
+    <!-- <script type="text/javascript">
+      let rev_name = document.getElementById('name').value;
+      let rev_email = document.getElementById('email').value;
+      let rev_phone = document.getElementById('phone').value;
+      let rev_date = document.getElementById('date').value;
+      let rev_venue = document.getElementById('venue').value;
+      let rev_people = document.getElementById('people').value;
+      let rev_message = document.getElementById('message').value;
+      let email_body = `The details of the table booking are:\nName: ${rev_name}\nEmail: ${rev_email}\nPhone: ${rev_phone}\nDate: ${rev_date}\nVenue: ${rev_venue}\nPeople Count: ${rev_people}\nMessage: ${rev_message}`
+      Email.send({
+        Host : "smtp.gmail.com",
+        Username : "satyamshah2201@gmail.com",
+        Password : "n@04121831",
+        To : 'techboyy6@gmail.com',
+        From :  document.getElementById('email').value,
+        Subject : "This is the subject",
+        Body : email_body
+    }).then(
+      message => alert(message)
+    );
+    </script> -->
+
 
 
 
@@ -855,7 +845,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4">
+          <!-- <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox" data-gall="gallery-item">
                 <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
@@ -885,7 +875,7 @@
                 <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
               </a>
             </div>
-          </div>
+          </div> -->
 
         </div>
 
@@ -969,10 +959,36 @@
           <h2>Contact</h2>
           <p>Contact Us</p>
         </div>
+        <!-- <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55s</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div> -->
 
         <div class="row">
 
-          <div class="col-lg-5 d-flex  align-items-stretch location">
+         <div class="col-lg-5 d-flex  align-items-stretch location">
             <div class="info">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
@@ -992,14 +1008,17 @@
                 <p>+1 5589 55488 55s</p>
               </div>
             <div class="map">  
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 175%; height: 290px;" allowfullscreen></iframe>
-            </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621 "frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div> 
             
-            <div class="map1">  
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 175%; height: 290px;" allowfullscreen></iframe>
-            </div>
+            
+
+            <!-- <div class="map1">  
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 125%; height: 290px;" allowfullscreen></iframe>
+            </div>  -->
 
           </div>
+          
 
         </div>
 
@@ -1169,48 +1188,54 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
-              <h3>Restaurantly</h3>
+              <h3>Punit Caterers</h3>
               <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+                <address><b>Dahanu Address :</b><br> Krishnakunj Building, Behind Bank of Baroda Dahanu Road.<br> Dist - Palghar Pin - 401602</address>
+                <address><b>Boisar Address:</b><br> Jagdish Enclave, 1st Floor, Nr S.T Stand Tarapur Road Boisar.<br> Dist - Palghar Pin - 401501</address>
+                <b>Ashish Rawal : +91 9673181995 <br> Email : info@example.com<br></b>
               </p>
-              <div class="social-links mt-3">
+              <!-- <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                 <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
                 <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
                 <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
+              </div> -->
             </div>
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#menu">Menu</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#specials">Specials</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Meals Plan</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#book-a-date">Book a Date</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact Us</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> Marriage Function</li>
+              <li><i class="bx bx-chevron-right"></i> Engagement Ceremony</li>
+              <li><i class="bx bx-chevron-right"></i> Reception</li>
+              <li><i class="bx bx-chevron-right"></i> Birthday Party</li>
+              <li><i class="bx bx-chevron-right"></i> Co-operative Events </li>
+              <li><i class="bx bx-chevron-right"></i> Others </li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li> -->
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li> -->
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-links">
             <ul>
-              <li><img src="assets\img\logo1.png" style="height: 200px; width: 450px;"></li>
+              <li><img src="assets\img\logo1.png" style="height: 270px; width: 500px;"></li>
             </ul>
       
           </div>
@@ -1243,12 +1268,47 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
+<!-- < jquery script> -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+<!-- smtp script   -->
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
 
+<!-- <script>
+  function sendmail(){
+    var name = $('#Name').val();
+    var email = $('#Email').val();
+    var phone = $('#Phone').val();
+    var date = $('#Date').val();
+    var venue = $('#Venue').val();
+    var people = $('#People').val();
+    var message = $('#Message').val();
+
+    var body= 'Name: '+name+'<br>Email: '+email+'<br>Phone :'+phone+'<br>Date :'+date+'<br>Venue :'+venue+'<br>People :'+people+'<br>Message :'+message;
+  }
+  Email.send({
+    Host : "smtp.gmail.com",
+    Username : "punitcaterers1981@gmail.com",
+    Password : "Punit@1981",
+    To : 'rahulshahp1603@gmail.com',
+    From : "punitcaterers1981@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => {
+    
+    if(message=='OK'){
+      alert("Thank you");
+    }
+    else{
+      console.error(message);
+      alert("Error")
+    }
+  }
+);
+</script> -->
 </html>
