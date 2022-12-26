@@ -224,7 +224,7 @@ h6 {
 }
 
  #header .logo{
-  border : 5px solid #fff;
+  /* border : 5px solid #fff; */
   
    max-width: 150px;
    max-height: 150px;
@@ -485,7 +485,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/home.png") top center;
+  background: url("../img/background.jpg") top center;
   background-size: cover;
   position: relative;
   padding: 0;
