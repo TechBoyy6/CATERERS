@@ -217,14 +217,18 @@ h6 {
   color: #fff;
 }
 
-#header .logo img{
+#header .logo .menu-img{
   max-height: 70px;
+  max-width: 150px;
   /* max-width: 100px; */
 }
 
-/* #header .logo{
+ #header .logo{
   border : 5px solid #fff;
-} */
+  
+   max-width: 150px;
+   max-height: 150px;
+} 
 
 
 /*--------------------------------------------------------------
