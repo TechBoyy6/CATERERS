@@ -279,4 +279,16 @@
 
 
 
+// const name=document.getElementById('name');
+// const email=document.getElementById('email');
+// const phone=document.getElementById('phone');
+// const date=document.getElementById('date');
+// const venu=document.getElementById('venu');
+// const people=document.getElementById('people');
+// const message=document.getElementById('message');
+// const submit=document.getElementsByClassName("form-contact")[0];
 
+// submit.addEventListener('submit',(e)=>{
+//   e.preventDefault();
+//   console.log("clicked")
+// })
