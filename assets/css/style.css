@@ -799,7 +799,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: url("../img/bg2.jpg") center center;
+  background: url("../img/bg3.jpg") center center;
   background-size: cover;
   position: relative;
   padding: 80px 0;
@@ -814,7 +814,7 @@ section {
   left: 0;
   right: 0;
 }
-
+/* 
 .about .about-img {
   position: relative;
   transition: 0.5s;
@@ -864,19 +864,27 @@ section {
 .about .about-img:hover::after {
   right: 10px;
   bottom: 10px;
-}
+} */
 
-.about .content h3 {
-  font-weight: 600;
-  font-size: 26px;
+.about .content h2 {
+  font-weight: 800;
+  font-size: 35px;
+  text-align: center;
+  font-style: italic;
 }
 
 .about .content ul {
   list-style: none;
   padding: 0;
 }
+.about .content p{
+  text-align: justify;
+  font-style: oblique;
+  /* font-family: 'Times New Roman', Times, serif; */
+  font-weight:500;
+  }
 
-.about .content ul li {
+/* .about .content ul li {
   padding-bottom: 10px;
 }
 
@@ -884,10 +892,11 @@ section {
   font-size: 20px;
   padding-right: 4px;
   color: #cda45e;
-}
+} */
 
 .about .content p:last-child {
   margin-bottom: 0;
+  /* text-align: justify; */
 }
 
 @media (min-width: 1024px) {
