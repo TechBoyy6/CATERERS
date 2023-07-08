@@ -218,7 +218,7 @@ h6 {
 }
 
 #header .logo .menu-img{
-  max-height: 90px;
+  max-height: 100px;
   max-width: 170px;
   /* max-width: 100px; */
 }
@@ -226,7 +226,7 @@ h6 {
  #header .logo{
   /* border : 5px solid #fff; */
   
-   max-width: 150px;
+   max-width: 200px;
    max-height: 150px;
 } 
 
