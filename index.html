@@ -221,11 +221,12 @@
             <div class="text-center">
               <!-- <h3>Call To Action</h3> -->
               <p> We have a wide variety of delicious food and drinks to choose from.</p>
-              <a class="cta-btn" href="assets/img/menu/breakfast.pdf" download="Breakfast">Menu</a>
+              <a class="cta-btn" href="assets/img/menu.pdf" download="Breakfast">Menu</a>
             </div>
     
           </div>
         </section><!-- End Cta Section -->
+        
 
 
     <!-- <section id="menu" class="menu section-bg">
@@ -661,64 +662,36 @@
                 <div class="validate"></div>
               </div>
 
-              <!-- <div class="mb-3"></div> -->
+              <div class="mb-3"></div>
 
 
-              <!-- <div class="mb-3">
+              <div class="mb-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
-              </div> -->
+              </div>
               <div class="form-group mt-3">
                 <div class="text-center"><button type="submit" id="submit">Book a Date</button></div>
               </div>
             </form>
-          </div><!-- End Reservation Form -->
+          </div> 
+          <!-- End Reservation Form -->
 
         </div>
 
       </div>
     </section>
-    <!-- <script type="text/javascript">
-      let rev_name = document.getElementById('name').value;
-      let rev_email = document.getElementById('email').value;
-      let rev_phone = document.getElementById('phone').value;
-      let rev_date = document.getElementById('date').value;
-      let rev_venue = document.getElementById('venue').value;
-      let rev_people = document.getElementById('people').value;
-      let rev_message = document.getElementById('message').value;
-      let email_body = `The details of the table booking are:\nName: ${rev_name}\nEmail: ${rev_email}\nPhone: ${rev_phone}\nDate: ${rev_date}\nVenue: ${rev_venue}\nPeople Count: ${rev_people}\nMessage: ${rev_message}`
-      Email.send({
-        Host : "smtp.gmail.com",
-        Username : "satyamshah2201@gmail.com",
-        Password : "n@04121831",
-        To : 'techboyy6@gmail.com',
-        From :  document.getElementById('email').value,
-        Subject : "This is the subject",
-        Body : email_body
-    }).then(
-      message => alert(message)
-    );
-    </script> -->
 
 
-
-
-
-
-
-
-    <!-- ======= Book A Table Section ======= -->
     <!-- <section id="book-a-table" class="book-a-table">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2>Reservation</h2>
-          <p>Book a Date</p>
+          <p>Book a Table</p>
         </div>
 
         <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
-        <form onsubmit="sendEmail(); reset(); return false;">
           <div class="row">
             <div class="col-lg-4 col-md-6 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
@@ -758,24 +731,7 @@
         </form>
 
       </div>
-      <script src =" https://smtpjs.com/v3/smtp.js"></script>
-      <script>
-        function sendEmail(){
-          Email.send({
-            Host : "smtp.gmail.com",
-            Username : "satyamshah2201@gmail.com",
-            Password : "n@04121831",
-            To : 'shahnayan0412@gmail.com',
-            From : document.getElementById("email").value,
-            Subject : "New Contact of inquery",
-            Body : "And this is the body"
-        }).then(
-          message => alert(message)
-        );
-        }
-      </script>
-    </section> -->
-    <!-- End Book A Table Section -->
+    </section>End Book A Table Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
