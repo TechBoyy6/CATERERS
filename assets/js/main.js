@@ -316,11 +316,6 @@ function bookDate() {
     emails.focus();
     return false;
   }
-
-  submit.addEventListener('submit', (e) => {
-    e.preventDefault();
-    console.log("clicked")
-  })
 }
 
 
