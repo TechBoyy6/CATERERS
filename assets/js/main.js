@@ -4,7 +4,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-(function() {
+(function () {
   "use strict";
 
   /**
@@ -116,7 +116,7 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function (e) {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -125,7 +125,7 @@
   /**
    * Mobile nav dropdowns activate
    */
-  on('click', '.navbar .dropdown > a', function(e) {
+  on('click', '.navbar .dropdown > a', function (e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()
       this.nextElementSibling.classList.toggle('dropdown-active')
@@ -135,7 +135,7 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
+  on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
       e.preventDefault()
 
@@ -184,9 +184,9 @@
 
       let menuFilters = select('#menu-flters li', true);
 
-      on('click', '#menu-flters li', function(e) {
+      on('click', '#menu-flters li', function (e) {
         e.preventDefault();
-        menuFilters.forEach(function(el) {
+        menuFilters.forEach(function (el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
@@ -194,7 +194,7 @@
         menuIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
-        menuIsotope.on('arrangeComplete', function() {
+        menuIsotope.on('arrangeComplete', function () {
           AOS.refresh()
         });
       }, true);
@@ -277,20 +277,51 @@
 
 })()
 
+function bookDate() {
+  const name = document.getElementById('name');
+  const email = document.getElementById('email');
+  const phone = document.getElementById('phone');
+  const date = document.getElementById('date');
+  const venu = document.getElementById('venu');
+  const people = document.getElementById('people');
+  const message = document.getElementById('message');
 
+  var mf = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (emails.value.match(mf)) {
+    const body = {
+      "Name": name,
+      "Email": email,
+      "Phone": phone,
+      "Date": date,
+      "Venu": venu,
+      "No. People": people,
+      "Message": message
+    };
+    console.log(message)
+    // Email.send({
+    //   Host: "smtp.gmail.com",
+    //   Username: "sender@email_address.com",
+    //   Password: "Enter your password",
+    //   To: 'receiver@email_address.com',
+    //   From: "sender@email_address.com",
+    //   Subject: "Sending Email using javascript",
+    //   Body: "Well that was easy!!",
+    // })
+    //   .then(function (message) {
+    //     alert("Date Booked Successfully")
+    //   });
+  }
+  else {
+    alert("Please enter valid email address!");
+    emails.focus();
+    return false;
+  }
 
-// const name=document.getElementById('name');
-// const email=document.getElementById('email');
-// const phone=document.getElementById('phone');
-// const date=document.getElementById('date');
-// const venu=document.getElementById('venu');
-// const people=document.getElementById('people');
-// const message=document.getElementById('message');
-// const submit=document.getElementsByClassName("form-contact")[0];
+  submit.addEventListener('submit', (e) => {
+    e.preventDefault();
+    console.log("clicked")
+  })
+}
 
-// submit.addEventListener('submit',(e)=>{
-//   e.preventDefault();
-//   console.log("clicked")
-// })
 
 
