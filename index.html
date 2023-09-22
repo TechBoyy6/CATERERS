@@ -620,7 +620,7 @@
           <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
 
           <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
-            <form onsubmit="return bookDate();" method="post" role="form" class="form-contact" data-aos="fade-up" data-aos-delay="100">
+            <div class="form-contact" id="bookForm" data-aos="fade-up" data-aos-delay="100">
               <div class="row gy-4">
                 
                 <div class="col-lg-4 col-md-6">
@@ -674,9 +674,9 @@
                 <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
               </div>
               <div class="form-group mt-3">
-                <div class="text-center"><button type="submit" id="submit">Book a Date</button></div>
+                <div class="text-center"><button type="submit" id="bookDate">Book a Date</button></div>
               </div>
-            </form>
+            </div>
           </div> 
           <!-- End Reservation Form -->
 
