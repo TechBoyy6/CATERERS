@@ -287,7 +287,7 @@ function bookDate() {
   const message = document.getElementById('message');
 
   var mf = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  if (emails.value.match(mf)) {
+  if (email.value.match(mf)) {
     const body = {
       "Name": name,
       "Email": email,
@@ -300,20 +300,20 @@ function bookDate() {
     console.log(message)
     // Email.send({
     //   Host: "smtp.gmail.com",
-    //   Username: "sender@email_address.com",
-    //   Password: "Enter your password",
-    //   To: 'receiver@email_address.com',
-    //   From: "sender@email_address.com",
+    //   Username: "codeshah18@gmail.com",
+    //   Password: "s@181201S",
+    //   To: 'punitcaterers1981@gmail.com',
+    //   From: "codeshah18@gmail.com",
     //   Subject: "Sending Email using javascript",
-    //   Body: "Well that was easy!!",
+    //   Body: "this is the body"
     // })
-    //   .then(function (message) {
-    //     alert("Date Booked Successfully")
-    //   });
+      .then(function (message) {
+        alert("Date Booked Successfully")
+      });
   }
   else {
     alert("Please enter valid email address!");
-    emails.focus();
+    email.focus();
     return false;
   }
 }
