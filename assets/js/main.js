@@ -277,26 +277,34 @@
 
 })()
 
-function bookDate() {
-  const name = document.getElementById('name');
+// document.getElementsByClassName("bookForm").addEventListener('submit', handleForm);;
+// function handleForm(event) { event.preventDefault(); }
+
+document.getElementById('bookDate').addEventListener('click', bookDate);
+
+function bookDate(event) {
+  console.log("bookDate")
+  const name = document.getElementById('name').value;
   const email = document.getElementById('email');
-  const phone = document.getElementById('phone');
-  const date = document.getElementById('date');
-  const venu = document.getElementById('venu');
-  const people = document.getElementById('people');
-  const message = document.getElementById('message');
+  const phone = document.getElementById('phone').value;
+  const date = document.getElementById('date').value;
+  const venue = document.getElementById('venue').value;
+  const people = document.getElementById('people').value;
+  const message = document.getElementById('message').value;
+
 
   var mf = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   if (email.value.match(mf)) {
     const body = {
       "Name": name,
-      "Email": email,
+      "Email": email.value,
       "Phone": phone,
       "Date": date,
-      "Venu": venu,
+      "venue": venue,
       "No. People": people,
       "Message": message
     };
+<<<<<<< HEAD
     console.log(message)
     // Email.send({
     //   Host: "smtp.gmail.com",
@@ -310,6 +318,22 @@ function bookDate() {
       .then(function (message) {
         alert("Date Booked Successfully")
       });
+=======
+    console.log(body)
+    Email.send({
+      Host: "smtp.gmail.com",
+      Username: "satyam.shah15803@sakec.ac.in",
+      Password: "satyamshah@181201",
+      To: 'satyamshah2201@gmail.com',
+      From: "satyam.shah15803@sakec.ac.in",
+      Subject: "Sending Email using javascript",
+      Body: body,
+    })
+      .then(function (message) {
+        alert("Date Booked Successfully")
+      });
+    return false;
+>>>>>>> 2441073916a4998e56c84e8b71788c585e6f4bc0
   }
   else {
     alert("Please enter valid email address!");
