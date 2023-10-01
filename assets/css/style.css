@@ -192,7 +192,7 @@ h6 {
   border-bottom: 1px solid rgba(12, 11, 9, 0.6);
   transition: all 0.5s;
   z-index: 997;
-  padding: 15px 0;
+  padding: 5px 0;
   top: 80px;
 }
 
@@ -290,7 +290,7 @@ h6 {
   color: #fff;
   white-space: nowrap;
   transition: 0.3s;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .navbar a i,
@@ -799,7 +799,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: url("../img/bg3.jpg") center center;
+  background: url("../img/hero1.jpeg") center center;
   background-size: cover;
   position: relative;
   padding: 80px 0;
@@ -870,7 +870,7 @@ section {
   font-weight: 800;
   font-size: 35px;
   text-align: center;
-  font-style: italic;
+  font-style: normal;
 }
 
 .about .content ul {
@@ -880,7 +880,7 @@ section {
 .about .content p{
   text-align: justify;
   font-style: oblique;
-  /* font-family: 'Times New Roman', Times, serif; */
+  font-family: 'Times New Roman', Times, serif;
   font-weight:500;
   }
 
@@ -1687,15 +1687,15 @@ section {
 # Contact
 --------------------------------------------------------------*/
 
-
+/* 
 .contact .info {
-  width: 500px;
+  width: 480px;
   height: 100%;
   background: #fff;
-  padding: 20px;
+  padding: 50px;
   border-radius: 10px;
-  margin-left: 10px; 
-  /* margin-right: 1000px;  */
+  margin-left: 20px; 
+  margin-right: 1000px; 
   position: relative;
 }
 
@@ -1852,7 +1852,7 @@ section {
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Footer
@@ -2006,4 +2006,74 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Venue Section
+--------------------------------------------------------------*/
+#contact {
+  padding: 60px 0;
+}
+
+#contact .container-fluid {
+  margin-bottom: 3px;
+}
+
+#contact .venue-map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+}
+
+#contact .venue-info {
+  background: url("../img/venue-info-bg.jpg") top center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#contact .venue-info:before {
+  content: "";
+  background: rgba(13, 20, 41, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#contact .venue-info h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+}
+
+@media (max-width: 574px) {
+  #contact .venue-info h3 {
+    font-size: 24px;
+  }
+}
+
+#contact .venue-info p {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+#contact .venue-gallery-container {
+  padding-right: 12px;
+}
+
+#contact .venue-gallery {
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+#contact .venue-gallery img {
+  transition: all ease-in-out 0.4s;
+}
+
+#contact .venue-gallery:hover img {
+  transform: scale(1.1);
 }

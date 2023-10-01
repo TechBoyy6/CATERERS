@@ -304,8 +304,7 @@ function bookDate(event) {
       "No. People": people,
       "Message": message
     };
-<<<<<<< HEAD
-    console.log(message)
+    // console.log(message)
     // Email.send({
     //   Host: "smtp.gmail.com",
     //   Username: "codeshah18@gmail.com",
@@ -315,16 +314,15 @@ function bookDate(event) {
     //   Subject: "Sending Email using javascript",
     //   Body: "this is the body"
     // })
-      .then(function (message) {
-        alert("Date Booked Successfully")
-      });
-=======
+      // .then(function (message) {
+      //   alert("Date Booked Successfully")
+      // });
     console.log(body)
     Email.send({
       Host: "smtp.gmail.com",
       Username: "satyam.shah15803@sakec.ac.in",
       Password: "satyamshah@181201",
-      To: 'satyamshah2201@gmail.com',
+      To: 'punitcaterers1981@gmail.com',
       From: "satyam.shah15803@sakec.ac.in",
       Subject: "Sending Email using javascript",
       Body: body,
@@ -333,7 +331,6 @@ function bookDate(event) {
         alert("Date Booked Successfully")
       });
     return false;
->>>>>>> 2441073916a4998e56c84e8b71788c585e6f4bc0
   }
   else {
     alert("Please enter valid email address!");
