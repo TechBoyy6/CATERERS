@@ -318,19 +318,30 @@ function bookDate(event) {
       //   alert("Date Booked Successfully")
       // });
     console.log(body)
+    // Email.send({
+    //   Host: "smtp.gmail.com",
+    //   Username: "satyam.shah15803@sakec.ac.in",
+    //   Password: "satyamshah@181201",
+    //   To: 'punitcaterers1981@gmail.com',
+    //   From: "satyam.shah15803@sakec.ac.in",
+    //   Subject: "Sending Email using javascript",
+    //   Body: body,
+    // })
     Email.send({
-      Host: "smtp.gmail.com",
-      Username: "satyam.shah15803@sakec.ac.in",
-      Password: "satyamshah@181201",
-      To: 'punitcaterers1981@gmail.com',
-      From: "satyam.shah15803@sakec.ac.in",
-      Subject: "Sending Email using javascript",
-      Body: body,
-    })
-      .then(function (message) {
-        alert("Date Booked Successfully")
-      });
+      SecureToken : "74f2039f-282e-4dfc-8402-06d17e3ec9cf",
+      To : 'satyam.shah15803@sakec.ac.in',
+      From : "satyam.shah15803@sakec.ac.in",
+      Subject : "This is the subject",
+      Body : body,
+  }).then(function (message) {
+    alert("Date Booked Successfully")
+    });
     return false;
+  
+    //   .then(function (message) {
+    //     alert("Date Booked Successfully")
+    //   });
+    // return false;
   }
   else {
     alert("Please enter valid email address!");

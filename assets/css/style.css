@@ -799,7 +799,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: url("../img/hero1.jpeg") center center;
+  background: url("../img/aboutus.jpg") center center;
   background-size: cover;
   position: relative;
   padding: 80px 0;
@@ -871,6 +871,7 @@ section {
   font-size: 35px;
   text-align: center;
   font-style: normal;
+
 }
 
 .about .content ul {
@@ -880,8 +881,9 @@ section {
 .about .content p{
   text-align: justify;
   font-style: oblique;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: cursive;
   font-weight:500;
+  font-size: 19px;
   }
 
 /* .about .content ul li {
@@ -1880,9 +1882,11 @@ section {
   margin: 0 0 20px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
-  font-weight: 300;
+  font-weight: 800;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
+  color: #e8c113 ;
+  /* font-display: ; */
 }
 
 #footer .footer-top .footer-info p {
@@ -1916,7 +1920,7 @@ section {
 
 #footer .footer-top h4 {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 900;
   color: #fff;
   position: relative;
   padding-bottom: 12px;
@@ -2035,7 +2039,8 @@ section {
 
 #contact .venue-info:before {
   content: "";
-  background: rgba(13, 20, 41, 0.8);
+  background: #101010;
+  border: #3e3d3d solid 4px;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -2043,10 +2048,13 @@ section {
   right: 0;
 }
 
-#contact .venue-info h3 {
-  font-size: 36px;
-  font-weight: 700;
+#contact .venue-info h4 {
+  font-size: 25px;
+  font-weight:500;
   color: #fff;
+  /* text-align: center; */
+  text-align: justify;
+  /* text-decoration: underline; */
 }
 
 @media (max-width: 574px) {
